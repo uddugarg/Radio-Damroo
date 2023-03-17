@@ -4,7 +4,6 @@ import styled from "styled-components";
 import img1 from "../assets/about3.jpg";
 import img2 from "../assets/about2.jpg";
 import img3 from "../assets/about1.jpg";
-import { Link } from "react-router-dom";
 
 const Section = styled.section`
   min-height: 100vh;

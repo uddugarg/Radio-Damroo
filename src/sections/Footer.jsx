@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Logo from "../assets/logo.png";
@@ -125,6 +128,21 @@ const Footer = () => {
 
   return (
     <Section>
+      <div class="container mx-auto lg:mb-0 relative mb-8 grid gap-1 grid-cols-12">
+        <div class="lg:col-start-2 lg:col-end-12 col-start-1 col-end-13 lg:px-0 px-4 relative">
+          <div data-v-a32cb6a4="" class="relative flex flex-row items-start border-collapse lg:absolute lg:top-0 lg:left-0 lg:flex-col">
+            <a data-v-a32cb6a4="" aria-label="Share to Facebook" href="https://www.facebook.com/profile.php?id=100089006416469&mibextid=ZbWKwL" class="border-gray-400 border-2 text-contrast-none w-12 h-12 text-2xl text-center justify-center flex" target="_blank" rel="noopener">
+              <FaFacebookF className='text-center mt-3 text-gray-500' />
+            </a>
+            <a data-v-a32cb6a4="" aria-label="Share to Instagram" href="https://instagram.com/radio_damroo?igshid=ZDdkNTZiNTM=" class="border-2 border-gray-400 text-contrast-none w-12 h-12 -ml-px text-2xl text-center justify-center flex lg:ml-0 lg:-mt-px" target="_blank" rel="noopener">
+              <RiInstagramFill className='text-center mt-3 text-gray-500' />
+            </a>
+            <a data-v-a32cb6a4="" aria-label="Share to LinkedIn" href="https://www.linkedin.com/company/radio-damroo/" class="border-2 border-gray-400 text-contrast-none w-12 h-12 -ml-px text-2xl text-center justify-center flex lg:ml-0 lg:-mt-px" target="_blank" rel="noopener">
+              <FaLinkedinIn className='text-center mt-3 text-gray-500' />
+            </a>
+          </div>
+        </div>
+      </div>
       <LogoContainer>
         <img
           width="300"
@@ -137,6 +155,15 @@ const Footer = () => {
         <h3 data-scroll data-scroll-speed="-1">
           Radio Damroo
         </h3>
+        <p data-scroll data-scroll-speed="-1" className="font-poppins">
+        <b>Address:</b> Vikas colony phase 3 pakka bagh Etawah, Uttar Pradesh, India (Pincode: 206001)
+        </p>
+        <p data-scroll data-scroll-speed="-1" className="font-poppins">
+          <b>Phone:</b> +91-##########
+        </p>
+        <p data-scroll data-scroll-speed="-1" className="font-poppins">
+          <b>Email:</b> Info@radiodamroo.com
+        </p>
       </LogoContainer>
       <FooterComponent
         initial={{ y: "-400px" }}
@@ -160,13 +187,13 @@ const Footer = () => {
             <a href='/promotion'>promotion</a>
           </li>
           <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
+            <a href="/team" rel="noreferrer">
               team
             </a>
           </li>
           <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
-              reviews
+            <a href="/contact" rel="noreferrer">
+              contact us
             </a>
           </li>
         </ul>

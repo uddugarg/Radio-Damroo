@@ -46,7 +46,7 @@ function Team() {
                         </li>
                     ))}
                     <li className='mt-5'>
-                        <a href="#">Hear from our team →</a>
+                        <a href="/team">Hear from our team →</a>
                     </li>
                 </ul>
             </div>

@@ -2,8 +2,14 @@ import React from 'react'
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Banner = () => {
+
+    function hide() {
+        var el = document.getElementById('banner');
+        el.style.display = 'none';
+    }
+
     return (
-        <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1 font-poppins">
+        <div id='banner' className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 py-2.5 px-6 sm:px-3.5 sm:before:flex-1 font-poppins">
             <svg
                 viewBox="0 0 577 310"
                 aria-hidden="true"
@@ -42,10 +48,11 @@ const Banner = () => {
                     <svg viewBox="0 0 2 2" className="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
                         <circle cx={1} cy={1} r={1} />
                     </svg>
-                    Join us on our Inaguaration Ceremony on March 25th.
+                    Join us at our Inauguration Ceremony on March 25th.
                 </p>
                 <a
-                    href="#"
+                    target='_blank'
+                    href="https://instagram.com/radio_damroo?igshid=ZDdkNTZiNTM="
                     className="flex-none rounded-full bg-gray-900 py-1 px-3.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                 >
                     Follow for more updates <span aria-hidden="true">&rarr;</span>
@@ -54,7 +61,7 @@ const Banner = () => {
             <div className="flex flex-1 justify-end">
                 <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]">
                     <span className="sr-only">Dismiss</span>
-                    <AiOutlineClose className="h-5 w-5 text-gray-900" aria-hidden="true" />
+                    <AiOutlineClose className="h-5 w-5 text-gray-900" aria-hidden="true" onClick={hide} />
                 </button>
             </div>
         </div>

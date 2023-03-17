@@ -7,9 +7,7 @@ import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im';
 
 import img1 from '../assets/team/shouhadra-2.png';
 import img2 from '../assets/team/aryan-yadav.png';
-import img3 from '../assets/team/rahul.png';
 import img4 from '../assets/team/Komal-Nahta.png';
-import img5 from '../assets/team/ravi-sharma.JPG';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -228,7 +226,7 @@ const TeamSection = () => {
           <img className="h-16 w-16 rounded-full" src={img1} alt='' />
           <div className='mt-5 mb-5 font-poppins text-center'>
             <h2 className='font-bold'>Shouhadra Dixit</h2>
-            <h4 className='text-sm text-gray-300'>Ceo &amp; Founder</h4>
+            <h4 className='text-sm text-gray-600'>Founder &amp; Ceo</h4>
           </div>
           <span className='font-poppins text-sm'>
             <b className='text-2xl'>“</b>My experience which I earned while working for various top companies in the industry like <b>AAJ TAK,
@@ -244,49 +242,23 @@ const TeamSection = () => {
           <img className="h-16 w-16 rounded-full" src={img2} alt='' />
           <div className='mt-5 mb-5 font-poppins text-center'>
             <h2 className='font-bold'>Aryan Yadav</h2>
-            <h4 className='text-sm text-gray-300'>Co-Founder &amp; Vice President</h4>
+            <h4 className='text-sm text-gray-600'>Co-Founder &amp; Vice President</h4>
           </div>
           <span className='font-poppins text-sm text-center'>
             <b className='text-2xl'>“</b>We will always try to become the voice of Etawah<b className='text-2xl'>”</b>
           </span>
         </Item>
         <Item>
-          <img className="h-16 w-16 rounded-full" src={img3} alt='' />
-          <div className='mt-5 mb-5 font-poppins text-center'>
-            <h2 className='font-bold'>Rahul Tiwari</h2>
-            <h4 className='text-sm text-gray-300'>CTO</h4>
-          </div>
-          <span className='font-poppins text-sm'>
-            <b className='text-2xl'>“</b>Etawah has always played one of the most important part in UP politics, there’s even a saying about
-            Etawah that <b>“Yahan har dusra banda neta hai”</b>. If you ask anyone in Etawah about any political
-            related situation happening in India, they’ll provide you a thorough detail. And observing this
-            <b>passion of Etawah towards politics and the nation</b> itself and seeing a completely distinctive
-            point of view of Etwaha I strongly believe that <b>89.6 Etawah’s own Radio Damroo</b> will play a
-            <b>very crucial role and even guide and educate the society with a pinch of Entertainment!</b><b className='text-2xl'>”</b>
-          </span>
-        </Item>
-        <Item>
           <img className="h-16 w-16 rounded-full" src={img4} alt='' />
           <div className='mt-5 mb-5 font-poppins text-center'>
             <h2 className='font-bold'>Komal Nahta</h2>
-            <h4 className='text-sm text-gray-300'>Programming Head &amp; Show Host</h4>
+            <h4 className='text-sm text-gray-600'>Programming Head &amp; Show Host</h4>
           </div>
           <span className='font-poppins text-sm'>
             <b className='text-2xl'>“</b>Komal Nahta is an Indian film trade analyst. Nahta is the publisher of "Film Information" and also a
             television show host. He is an anchor of the trade show <b>ETC Bollywood Business on the Bollywood TV
               channels ETC and Zee Cinema</b>. He is in the advisory board of Cinema Capital and other top
             companies. <b>And he truly believes that Damroo will bring alot of change</b>.<b className='text-2xl'>”</b>
-          </span>
-        </Item>
-        <Item>
-          <img className="h-16 w-16 rounded-full" src={img5} alt='' />
-          <div className='mt-5 mb-5 font-poppins text-center'>
-            <h2 className='font-bold'>Ravi Sharma</h2>
-            <h4 className='text-sm text-gray-300'>Programming Manager</h4>
-          </div>
-          <span className='font-poppins text-sm'>
-            <b className='text-2xl'>“</b>Ravi sharma Worked for Ishq FM, My FM believes that "With the launch of Damroo, entertainment will
-            have a new definition in Etawah"<b className='text-2xl'>”</b>
           </span>
         </Item>
       </Container>
